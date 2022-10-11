@@ -17,10 +17,11 @@ const App = () => {
 
     return (
         <div className='main-container'>
+            <span>Write a city and press enter to search the weather </span>
             <input
                 type="text"
                 className='search'
-                placeholder='Search ...'
+                placeholder='Search city...'
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyPress={search}
